@@ -86,7 +86,7 @@ func main() {
 	}
 
 	if args[1] != stdinFlag {
-		// This program will call sfdisk an
+		// Exec sfdisk here to get its output
 		callSfdisk(args)
 		return
 	}
