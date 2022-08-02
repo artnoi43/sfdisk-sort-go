@@ -16,6 +16,10 @@ In short, this script _does not_ modify your partition table, but instead, it sp
 
 > sfdisk-sort-helper is tested for `/dev/sdX` (which implies that it should also works with `/dev/vdX` and other similar names), and `/dev/nvmeXnYpZ` schemes.
 
+## Lightweight script
+`sfdisk-sort-go` is designed to use 0 non-standard-library code, and is written in only one file `main.go` such that it can be very portable and shared very easily. As a result, you might find the code smells or is very difficult to change and expand.
+
+If you want to use a some what structured program so that you can easily change it, there's [`sfdisk-sort-rs`](https://github.com/artnoi43/sfdisk-sort-rs) which has a more conservative source file layout.
 
 ## `sfdisk-sort-go` Requirements:
 
